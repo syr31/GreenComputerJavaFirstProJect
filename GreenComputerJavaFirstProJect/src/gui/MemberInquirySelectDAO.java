@@ -40,11 +40,6 @@ public class MemberInquirySelectDAO extends MemberDAO {
 
 				System.out.println(code + ", " + name + ", " + age + ", " + hei + ", " + wei);
 
-//				System.out.println("ȸ���ڵ� : " + rs.getString("re_code"));
-//				System.out.println("ȸ���̸� : " + rs.getString("re_name"));
-//				System.out.println("ȸ������ : " + rs.getString("re_age"));
-//				System.out.println("ȸ�� Ű : " + rs.getString("re_height"));
-//				System.out.println("ȸ�� ������ : " + rs.getString("re_weight"));
 
 			}
 		} catch (Exception e) {

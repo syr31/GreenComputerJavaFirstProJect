@@ -1,4 +1,5 @@
 package gui;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -101,6 +102,7 @@ public class JoinFrame extends JFrame implements ActionListener {
 
 		joinCompleteBtn = new JButton("회원가입 완료");
 		joinCompleteBtn.setBounds(206, 400, 139, 29);
+		joinCompleteBtn.setBackground(Color.PINK);;
 		contentPane.add(joinCompleteBtn);
 
 		joinCompleteBtn.addActionListener(this);

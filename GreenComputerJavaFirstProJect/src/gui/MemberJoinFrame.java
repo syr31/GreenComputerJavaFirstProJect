@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -38,25 +39,20 @@ public class MemberJoinFrame extends JFrame implements ActionListener {
 	JTextArea table_ta = new JTextArea();
 	JScrollPane scrollPane = new JScrollPane();
 
-	// Controller (dao)
-
 	public MemberJoinFrame() {
 		score_gui();
 
-	} // constructor
+	}
 
 	public void score_gui() {
-		// Frame ����
 		score_frame.setVisible(true);
 		score_frame.setResizable(false);
 		score_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		score_frame.setBounds(300, 400, 500, 320);
 		score_frame.add(score_pane);
 
-		// Panel ����
 		score_pane.setLayout(null);
 
-		// Label ����
 		Font font = new Font(null, Font.BOLD, 13);
 		title_label.setBounds(50, 20, 120, 25);
 		title_label.setFont(font);
@@ -74,7 +70,6 @@ public class MemberJoinFrame extends JFrame implements ActionListener {
 		weight_label.setBounds(20, 190, 70, 25);
 		score_pane.add(weight_label);
 
-		// TextField ����
 		code_tf.setBounds(70, 70, 120, 25);
 		score_pane.add(code_tf);
 
@@ -90,16 +85,13 @@ public class MemberJoinFrame extends JFrame implements ActionListener {
 		weight_tf.setBounds(70, 230, 120, 25);
 		score_pane.add(weight_tf);
 
-		// Button ����
 		reg_btn.setBounds(15, 220, 75, 25);
-//		reg_btn.addActionListener(this);
 		score_pane.add(reg_btn);
 
 		start_btn.setBounds(15, 251, 75, 25);
 		score_pane.add(start_btn);
 
 		rst_btn.setBounds(115, 251, 75, 25);
-//		rst_btn.addActionListener(this);
 		score_pane.add(rst_btn);
 
 		inquiry_btn.setBounds(115, 220, 75, 25);
@@ -108,12 +100,10 @@ public class MemberJoinFrame extends JFrame implements ActionListener {
 		// TextArea ����
 		table_ta.setEditable(false);
 
-		// Scroll ����
 		scrollPane.setBounds(210, 20, 270, 250);
 		scrollPane.setViewportView(table_ta);
 		score_pane.add(scrollPane);
 
-		// table
 		String header[] = { "[등록번호]", "[이  름]", "[나  이]", "[  키  ]", "[몸 무 게]" };
 		String contents[][] = { { "20230103", "신oo", "50", "176", "80" } };
 
@@ -137,6 +127,7 @@ public class MemberJoinFrame extends JFrame implements ActionListener {
 		score_pane.add(weight_tf);
 
 		JButton reg_btn = new JButton("등록");
+		reg_btn.setBackground(Color.PINK);
 		reg_btn.addActionListener(this);
 
 		reg_btn.addActionListener(new ActionListener() {
@@ -165,8 +156,13 @@ public class MemberJoinFrame extends JFrame implements ActionListener {
 		});
 
 		JButton rst_btn = new JButton("삭제");
+		rst_btn.setBackground(Color.PINK);
+		
 		JButton start_btn = new JButton("시작");
+		start_btn.setBackground(Color.PINK);
+		
 		JButton inquiry_btn = new JButton("조회");
+		inquiry_btn.setBackground(Color.PINK);
 
 		rst_btn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

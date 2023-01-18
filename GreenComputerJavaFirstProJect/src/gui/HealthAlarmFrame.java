@@ -1,6 +1,7 @@
 package gui;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.FlowLayout;
 import java.awt.Toolkit;
@@ -95,6 +96,7 @@ public class HealthAlarmFrame {
 		mainAppPanel.add(sbj4);
 
 		JButton addBtn = new JButton("추가");
+		addBtn.setBackground(Color.pink);
 
 		addBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -130,6 +132,7 @@ public class HealthAlarmFrame {
 		});
 
 		JButton cancelBtn = new JButton("삭제");
+		cancelBtn.setBackground(Color.pink);
 
 		cancelBtn.addActionListener(new ActionListener() {
 
@@ -146,6 +149,7 @@ public class HealthAlarmFrame {
 		});
 
 		JButton inquiryBtn = new JButton("조회");
+		inquiryBtn.setBackground(Color.pink);
 
 		inquiryBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -182,6 +186,9 @@ public class HealthAlarmFrame {
 		setAlarmOnButton = new JButton("Start");
 		setAlarmOffButton = new JButton("Stop");
 		setAlarmOffButton.setEnabled(false);
+		
+		setAlarmOnButton.setBackground(Color.PINK);
+		setAlarmOffButton.setBackground(Color.pink);
 
 		setAlarmOnButton.addActionListener(new alarmOnListener());
 		setAlarmOffButton.addActionListener(new alarmOffListener());

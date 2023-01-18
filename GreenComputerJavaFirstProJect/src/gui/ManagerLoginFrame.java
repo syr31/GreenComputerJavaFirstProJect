@@ -1,5 +1,6 @@
 package gui;
 
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -58,14 +59,17 @@ public class ManagerLoginFrame extends JFrame implements ActionListener {
 
 		joinBtn = new JButton("회원가입");
 		joinBtn.setBounds(229, 154, 104, 29);
+		joinBtn.setBackground(Color.PINK);
 		contentPane.add(joinBtn);
 
 		loginBtn = new JButton("로그인");
 		loginBtn.setBounds(108, 154, 106, 29);
+		loginBtn.setBackground(Color.PINK);
 		contentPane.add(loginBtn);
 
 		IdBtn = new JButton("아이디 찾기");
 		IdBtn.setBounds(140, 200, 160, 29);
+		IdBtn.setBackground(Color.PINK);
 		contentPane.add(IdBtn);
 
 		tfPassword = new JTextField();

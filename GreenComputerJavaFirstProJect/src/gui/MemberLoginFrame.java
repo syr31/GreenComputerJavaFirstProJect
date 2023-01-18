@@ -1,5 +1,6 @@
 package gui;
 
+import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -43,12 +44,9 @@ public class MemberLoginFrame extends JFrame implements ActionListener {
 		contentPane.add(tfUsername);
 		tfUsername.setColumns(10);
 
-		joinBtn = new JButton("회원가입");
-		joinBtn.setBounds(229, 154, 104, 29);
-		contentPane.add(joinBtn);
-
 		loginBtn = new JButton("로그인");
-		loginBtn.setBounds(108, 154, 106, 29);
+		loginBtn.setBounds(180, 154, 106, 29);
+		loginBtn.setBackground(Color.PINK);
 		contentPane.add(loginBtn);
 
 		tfPassword = new JTextField();
@@ -87,14 +85,8 @@ public class MemberLoginFrame extends JFrame implements ActionListener {
 				}
 			}
 		});
-		
-		joinBtn.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				JoinFrame frame = new JoinFrame();
-			}
-		});
 	}
-
+		
 	@Override
 	public void actionPerformed(ActionEvent e) {
 	}
